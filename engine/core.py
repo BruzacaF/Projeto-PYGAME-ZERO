@@ -1,4 +1,5 @@
 # engine/map.py
+import pgzrun
 
 from pgzero.builtins import Actor
 from config import TILE_SIZE, TILES_X, TILES_Y, WIDTH, HEIGHT,TILES
@@ -18,7 +19,7 @@ def generate_map():
 from config import TILE_SIZE, WIDTH, HEIGHT, TILES
 from pgzero.actor import Actor
 
-def draw_map(mapa, player):
+def draw_map(mapa):
     # Desenha o fundo
     fundo = Actor(TILES['BG'])
     fundo.topleft = (0, 0)
@@ -35,4 +36,4 @@ def draw_map(mapa, player):
                     tile_actor.draw()
 
     # Desenha o personagem por cima dos tiles
-    player.draw()
+
