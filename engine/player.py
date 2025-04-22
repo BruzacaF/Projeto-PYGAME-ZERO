@@ -276,7 +276,7 @@ class Laser:
         self.hitbox = Rect((0, 0),(self.sprite.width, self.sprite.height))
         self.hitted = False  # Verifica se o laser atingiu algo
 
-        # Logica do jogo
+        # Variáveis de jogo
         self.damage = 10 
 
     def update(self):
@@ -294,10 +294,6 @@ class Laser:
         self.hitbox.y = self.sprite.y - self.hitbox.height // 2
         self.hitbox.width = self.sprite.width * 0.8
         self.hitbox.height = self.sprite.height * 0.8
-
-        # Atualiza a hitbox do laser para acompanhar o sprite
-        # Verifica se o laser colidiu com algo (opcional, dependendo da lógica do jogo)
-        # Aqui você pode adicionar lógica para verificar colisões com inimigos ou objetos do mapa
 
         # Verifica se o laser saiu da tela
         if self.sprite.x < 0 or self.sprite.x > WIDTH or self.sprite.y < 0 or self.sprite.y > HEIGHT:

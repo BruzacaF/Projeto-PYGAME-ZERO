@@ -194,7 +194,7 @@ class Enemy:
         """Desenha o inimigo na tela."""
         self.sprite.draw()
         self.draw_text(screen)  # Desenha o texto de vida acima do inimigo
-        # Aqui você pode desenhar a barra de vida ou outros elementos relacionados ao inimigo
+    
 
 
 

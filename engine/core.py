@@ -35,5 +35,5 @@ def draw_map(mapa):
                     tile_actor.topleft = (x * TILE_SIZE, y * TILE_SIZE)
                     tile_actor.draw()
 
-    # Desenha o personagem por cima dos tiles
+
 

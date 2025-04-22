@@ -51,7 +51,7 @@ MUSICS = {
 
 
 
-# Adiciona a arma como um ator separado
+
 
 
 
